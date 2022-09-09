@@ -20,7 +20,7 @@ public class ItemController
     {
         return ItemDao.getAllItems();
     }
-
+    // Mapping
     @GetMapping (path="/item/{id}")
     public String checkItem(@PathVariable int id){
         return ItemDao.getItem(id);
